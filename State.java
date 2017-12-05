@@ -507,7 +507,7 @@ public class State {
 		used[1] = true;
 	}
 
-	/**TODO FIX PROBLEMS WITH TABLE
+	/**
 	 * Creates the index table for mod p using base b
 	 * @param b The base being raised by the order e_p(a)
 	 * @param p from base^I(a) congruent a (mod p)
