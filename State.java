@@ -16,8 +16,10 @@ import javax.swing.*;
  * for keeping track of numbers entered and performing operations when buttons
  * are clicked. It tells the display what number to show.
  * 
- * Rae Harris
+ * @author Rae Harris
  * 4 October 2017
+ * 
+ * (Kim Bruce wrote isPrime())
  * 
  */
 
@@ -400,15 +402,16 @@ public class State {
 	 * @post number n! is displayed 
 	 */
 	public void factorial(){
-		int temp = numbers[current];
-		int result = 1;
+		double temp = (double)numbers[current];
+		double result = 1.0;
 		
 		while(temp>1){
 			result = result * (temp);
 			temp--;
 		}
+		int r = (int) result;
 
-		calcDisplay.setText(""+result);
+		calcDisplay.setText(""+r);
 		instruct.setText("Factorial of current number: n!");
 		displayNum = true;		
 	}
@@ -465,6 +468,7 @@ public class State {
 	
 	/**
 	 * Tells if number is prime
+	 * @author Kim Bruce
 	 */
 	public void isPrime(){
 		boolean prime = isPrimeHelp(numbers[current]);
@@ -549,12 +553,6 @@ public class State {
 			n=0; //reset n to search again
 			i++;
 		}
-//		System.out.println("I(a): "+indexA);
-//		System.out.println("a:    "+a);
-//		System.out.println("");
-//		System.out.println("sorted a:    " + sortedA);
-//		System.out.println("sorted I(a): " + sortedIndexA);
-//		System.out.println("");
 		i=0;
 
 		String print = "I(a): " + indexA +"\n" 
