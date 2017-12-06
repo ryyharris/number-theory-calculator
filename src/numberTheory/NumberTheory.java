@@ -11,7 +11,7 @@ import structure5.Association;
  * Number Theory
  * 
  * These methods are addapted and put into the State class in order
- * to be used with the calculator
+ * to be used with the Calculator class
  * 
  * @author Rae Yan Yan Harris
  * 
