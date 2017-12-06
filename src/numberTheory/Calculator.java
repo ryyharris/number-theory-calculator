@@ -38,8 +38,8 @@ public class Calculator extends JFrame {
 
 
 	private JButton clearButton, 		 //Clear out numbers
-					enterButton,		 //execute Equations from dispCombo 
-					calculateButton,	 //execute Formulas from dispCombo
+					redCalculateButton,		 //execute Equations from dispCombo 
+					greenCalculateButton,	 //execute Formulas from dispCombo
 					backspaceButton,	 //Removes constructed number from selected field
 					pulsMinusButton,	 //Swaps number's sign
 					
@@ -208,8 +208,8 @@ public class Calculator extends JFrame {
 		bottomMidPanel.setLayout(new GridLayout(1, 4, 5, 5));
 
 
-		enterButton = new JButton("Enter");
-		enterButton.addActionListener((ActionEvent evt) -> {
+		redCalculateButton = new JButton("Calculate");
+		redCalculateButton.addActionListener((ActionEvent evt) -> {
 			String selected = dispCombo.getSelectedItem()+"";
 			
 			if(selected.compareTo("Relatively Prime") == 0){
@@ -228,10 +228,10 @@ public class Calculator extends JFrame {
 				calcState.isPrime();
 			}
 		});		
-		enterButton.setBackground(Color.red);
-		enterButton.setOpaque(true);
+		redCalculateButton.setBackground(Color.red);
+		redCalculateButton.setOpaque(true);
 
-		bottomMidPanel.add(enterButton);
+		bottomMidPanel.add(redCalculateButton);
 		
 		
 		digitButton[0] = new JButton("" + 0);
@@ -239,8 +239,8 @@ public class Calculator extends JFrame {
 		bottomMidPanel.add(digitButton[0]);
 		
 		
-		calculateButton = new JButton("Calculate");
-		calculateButton.addActionListener((ActionEvent evt) -> {
+		greenCalculateButton = new JButton("Calculate");
+		greenCalculateButton.addActionListener((ActionEvent evt) -> {
 			String selected = numCombo.getSelectedItem()+"";
 			if(selected.compareTo("Square") == 0){
 				calcState.square();
@@ -258,9 +258,9 @@ public class Calculator extends JFrame {
 				calcState.successiveSquaring();
 			} 
 		});
-		calculateButton.setBackground(Color.green);
-		calculateButton.setOpaque(true);
-		bottomMidPanel.add(calculateButton);
+		greenCalculateButton.setBackground(Color.green);
+		greenCalculateButton.setOpaque(true);
+		bottomMidPanel.add(greenCalculateButton);
 		
 		
 		calcPanel.add(bottomMidPanel);
