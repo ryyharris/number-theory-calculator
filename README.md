@@ -8,4 +8,4 @@ Operations in the red drop down are calculations that do not result in a number 
 
 The "Clear" resets the whole calculator, "BackSpace" resets the current number.
 
-NOTE: This class uses many structures from the Bailiey jar file. First create a variable BAILIEY and add it to the project before using this calculator.
+NOTE: This project uses many structures from the Bailiey jar file. First create a variable BAILIEY and add it to the project before using this calculator.
