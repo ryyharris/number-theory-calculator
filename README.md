@@ -7,3 +7,5 @@ When launched, there are two large JTextArea boxes at the top. The first will di
 Operations in the red drop down are calculations that do not result in a number while those in the green do. Only calculations from the green side are able to be copied into the current number the user is interacting with. Thus while the calculator will not store the result of "Is Prime?", it will store the result of a "Successive Squaring"
 
 The "Clear" resets the whole calculator, "BackSpace" resets the current number.
+
+NOTE: This class uses many structures from the Bailiey jar file. First create a variable BAILIEY and add it to the project before using this calculator.
